@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+    <title>Austin Goodman TTU</title>
+</head>
+
+<body>
+	
+	<div id="auto"></div>
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script>
+		
+		$(document).ready( function(){
+		$("#auto").load("ProjectLab/project.php");
+		refresh();
+		});
+		
+		function refresh(){
+			setTimeout( function() {
+			$("#auto").load("ProjectLab/project.php");
+			refresh();
+		}, 200);}
+		
+	</script>
+</body>
+
+</html>
